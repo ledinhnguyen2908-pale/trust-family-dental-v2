@@ -1,0 +1,121 @@
+/*
+Theme Name: Flatsome Child
+Description: Trust Family Dental child theme for multi-location and multilingual content.
+Author: Trust Family Dental
+Template: flatsome
+Version: 3.1.0
+Text Domain: flatsome-child
+*/
+
+:root {
+	--tfd-primary: #126e73;
+	--tfd-primary-dark: #0b5054;
+	--tfd-accent: #d9a441;
+	--tfd-ink: #243238;
+	--tfd-muted: #64737a;
+	--tfd-border: #dfe7e9;
+	--tfd-surface: #f6f9f9;
+	--tfd-radius: 14px;
+	--tfd-shadow: 0 12px 36px rgba(26, 61, 65, 0.1);
+}
+
+.tfd-location-page { padding: 40px 0 64px; }
+.tfd-location-header { margin-bottom: 28px; }
+.tfd-location-header__eyebrow { color: var(--tfd-primary); font-size: .82rem; font-weight: 700; letter-spacing: .08em; margin: 0 0 8px; text-transform: uppercase; }
+.tfd-location-header h1 { color: var(--tfd-ink); font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.12; margin-bottom: 14px; }
+.tfd-location-lead { color: var(--tfd-muted); font-size: 1.1rem; max-width: 760px; }
+.tfd-location-content > section + section { margin-top: 40px; }
+.tfd-location-content h2,
+.tfd-location-sidebar h2 { color: var(--tfd-ink); font-size: clamp(1.35rem, 2vw, 1.75rem); margin-bottom: 18px; }
+.tfd-featured-image { border-radius: var(--tfd-radius); display: block; height: auto; margin-bottom: 28px; overflow: hidden; width: 100%; }
+
+.tfd-gallery { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tfd-gallery__item { background: var(--tfd-surface); border-radius: 10px; margin: 0; overflow: hidden; }
+.tfd-gallery__item img { display: block; height: 220px; object-fit: cover; width: 100%; }
+
+.tfd-doctor-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tfd-doctor-card { background: #fff; border: 1px solid var(--tfd-border); border-radius: var(--tfd-radius); box-shadow: 0 6px 20px rgba(26, 61, 65, .06); display: grid; grid-template-columns: 108px 1fr; overflow: hidden; }
+.tfd-doctor-card__photo { background: var(--tfd-surface); min-height: 140px; }
+.tfd-doctor-card__photo img { height: 100%; object-fit: cover; width: 100%; }
+.tfd-doctor-card__body { align-self: center; padding: 18px; }
+.tfd-doctor-card__body h3 { font-size: 1.05rem; margin: 0 0 6px; }
+.tfd-doctor-card__specialty { color: var(--tfd-primary); font-size: .92rem; font-weight: 600; margin: 0; }
+
+.tfd-booking-panel { background: var(--tfd-surface); border-radius: var(--tfd-radius); padding: clamp(22px, 4vw, 36px); scroll-margin-top: 100px; }
+.tfd-location-sidebar { position: sticky; top: 96px; }
+.admin-bar .tfd-location-sidebar { top: 128px; }
+.tfd-info-box { background: #fff; border: 1px solid var(--tfd-border); border-radius: var(--tfd-radius); box-shadow: var(--tfd-shadow); margin-bottom: 22px; padding: 24px; }
+
+.tfd-nap-list { list-style: none; margin: 0; padding: 0; }
+.tfd-nap-list li + li { border-top: 1px solid var(--tfd-border); margin-top: 13px; padding-top: 13px; }
+.tfd-nap-list strong { display: block; font-size: .78rem; letter-spacing: .05em; margin-bottom: 3px; text-transform: uppercase; }
+.tfd-nap-list address { font-style: normal; margin: 0; }
+
+.tfd-hours { border-collapse: collapse; font-size: .94rem; margin: 0; width: 100%; }
+.tfd-hours th,
+.tfd-hours td { border-bottom: 1px solid var(--tfd-border); padding: 9px 0; vertical-align: top; }
+.tfd-hours th { color: var(--tfd-ink); font-weight: 600; padding-right: 12px; text-align: left; width: 42%; }
+.tfd-hours td { text-align: right; }
+.tfd-hours__note { color: var(--tfd-muted); display: block; font-size: .82rem; margin-top: 2px; }
+
+.tfd-hotline-button { align-items: center; background: var(--tfd-primary); border-radius: 999px; color: #fff !important; display: flex; font-weight: 700; justify-content: center; margin-top: 20px; min-height: 48px; padding: 10px 18px; text-align: center; }
+.tfd-hotline-button:hover,
+.tfd-hotline-button:focus-visible { background: var(--tfd-primary-dark); }
+
+.tfd-map-placeholder { align-items: center; aspect-ratio: 4 / 3; background: linear-gradient(145deg, #e7eeee, #f7f9f9); border-radius: 10px; display: flex; justify-content: center; min-height: 260px; overflow: hidden; position: relative; }
+.tfd-map-placeholder iframe { border: 0; height: 100%; inset: 0; position: absolute; width: 100%; }
+.tfd-map-placeholder__button { background: var(--tfd-primary); border: 0; border-radius: 999px; color: #fff; cursor: pointer; font: inherit; font-weight: 700; min-height: 46px; padding: 10px 20px; }
+.tfd-map-placeholder__button:hover,
+.tfd-map-placeholder__button:focus-visible { background: var(--tfd-primary-dark); }
+
+.tfd-mobile-actions { display: none; }
+
+.tfd-location-archive { padding: 40px 0 64px; }
+.tfd-location-archive__header { margin-bottom: 30px; text-align: center; }
+.tfd-location-archive__grid { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tfd-location-card { background: #fff; border: 1px solid var(--tfd-border); border-radius: var(--tfd-radius); box-shadow: var(--tfd-shadow); overflow: hidden; }
+.tfd-location-card__image { aspect-ratio: 16 / 9; background: var(--tfd-surface); display: block; overflow: hidden; }
+.tfd-location-card__image img { height: 100%; object-fit: cover; width: 100%; }
+.tfd-location-card__body { padding: 24px; }
+.tfd-location-card__body h2 { font-size: 1.35rem; margin-bottom: 10px; }
+.tfd-location-card__address { color: var(--tfd-muted); min-height: 2.8em; }
+.tfd-location-card__phone { font-weight: 700; }
+
+.tfd-doctor-archive { padding: 40px 0 64px; }
+.tfd-doctor-archive__header { margin-bottom: 30px; text-align: center; }
+.tfd-doctor-archive__grid { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tfd-profile-card { background: #fff; border: 1px solid var(--tfd-border); border-radius: var(--tfd-radius); box-shadow: var(--tfd-shadow); overflow: hidden; }
+.tfd-profile-card__image { aspect-ratio: 4 / 5; background: var(--tfd-surface); display: block; overflow: hidden; }
+.tfd-profile-card__image img { height: 100%; object-fit: cover; width: 100%; }
+.tfd-profile-card__body { padding: 22px; }
+.tfd-profile-card__body h2 { font-size: 1.3rem; margin-bottom: 6px; }
+.tfd-profile-card__specialty { color: var(--tfd-primary); font-weight: 700; }
+.tfd-doctor-profile { padding: 40px 0 64px; }
+.tfd-doctor-profile__photo img { border-radius: var(--tfd-radius); width: 100%; }
+.tfd-doctor-profile__specialty { color: var(--tfd-primary); font-size: 1.15rem; font-weight: 700; }
+.tfd-doctor-profile__meta { background: var(--tfd-surface); border-radius: var(--tfd-radius); margin: 24px 0; padding: 20px 24px; }
+
+@media (max-width: 849px) {
+	.tfd-location-sidebar { position: static; }
+	.tfd-doctor-grid { grid-template-columns: 1fr; }
+	.tfd-location-archive__grid { grid-template-columns: 1fr; }
+	.tfd-doctor-archive__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 48em) {
+	body.has-tfd-mobile-actions { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+	.tfd-location-page { padding: 24px 0 40px; }
+	.tfd-gallery { grid-template-columns: 1fr; }
+	.tfd-gallery__item img { height: 210px; }
+	.tfd-info-box { padding: 20px; }
+	.tfd-doctor-archive__grid { grid-template-columns: 1fr; }
+	.tfd-mobile-actions { align-items: stretch; background: #fff; border-top: 1px solid var(--tfd-border); bottom: 0; box-shadow: 0 -8px 24px rgba(23, 53, 57, .14); display: flex; left: 0; padding-bottom: env(safe-area-inset-bottom); position: fixed; right: 0; z-index: 9998; }
+	.tfd-mobile-actions__item { align-items: center; color: #fff !important; display: flex; flex: 1 1 50%; font-size: .93rem; font-weight: 700; gap: 7px; justify-content: center; min-height: 64px; padding: 10px 12px; text-align: center; }
+	.tfd-mobile-actions__item--call { background: var(--tfd-primary-dark); }
+	.tfd-mobile-actions__item--book { background: var(--tfd-primary); }
+	.tfd-mobile-actions__icon { font-size: 1.15rem; line-height: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: auto !important; }
+}
